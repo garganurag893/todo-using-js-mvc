@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Todo List Javascript</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div id="maindiv">
+    <div class="container text-center">
+        <h1 id="hh" class="pt-4 display-1 font-weight-lighter">todos</h1>
+        <div class="shadow-lg  font-weight-lighter mt-4 mr-4 ml-4 mb-0 bg-white text-left">
+            <div class="d-flex">
+                <i class="p-4 fas fa-angle-down icon" onclick="func3()"></i>
+                <input id="new" class="pl-4 display-4 font-italic font-weight-lighter" placeholder="What needs to be done? ">
+            </div>
+        </div>
+        <ul id="list" class="shadow-lg  font-weight-lighter mr-4 ml-4 mb-0 bg-white text-left">
+        </ul>
+        <div class="maindiv2 d-flex font-weight-lighter mt-0 mr-4 ml-4 p-2 sdiv bg-white text-left justify-content-between">
+            <div id="clear2">
+                <span id="count">0</span> items left
+            </div>
+            <div>
+                <button class="btn btn-outline-secondary font-weight-lighter" onclick="display()">All</button>
+                <button class="btn btn-outline-secondary font-weight-lighter" onclick="active()">Active</button>
+                <button class="btn btn-outline-secondary font-weight-lighter" onclick="completed()">Completed</button>
+            </div>
+            <div id="clear" onclick="clearcomp()">
+                Clear Completed
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/Model.js"></script>
+<script type="text/javascript" src="js/Controller.js">    
+</script>
+</body>
+</html>
