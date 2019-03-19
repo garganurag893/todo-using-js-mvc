@@ -170,6 +170,7 @@ function clearcomp()
                 if(listarr[i].iscomp==1)
                     {
                         listarr.splice(i,1);
+                        i--;
                     }
             }
     display();
